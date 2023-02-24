@@ -1084,7 +1084,7 @@ nav{
       <h4>Your Name<span style="color:red;">*</sapn></h4>
         <input class="input_ask" type="text" name="name" id="name" placeholder="Type"/>
     </br>
-      <h4>Your Phone<span style="color:red;">*</sapn></h4>
+      <h4>Your Phone Number<span style="color:red;">*</sapn></h4>
         <input class="input_ask" type="text" name="phone" id="phone" placeholder="Type" max="8"/>
     </br>
       <h4>Leave Your Response<span style="color:red;">*</sapn></h4>
@@ -1159,13 +1159,13 @@ nav{
   $(document).ready(function(){
      $("#button").click(function(){
          if($("#name").val()==""){
-             alert("尚未填寫姓名");
+             alert("Please fill in your name");
          }else if($("#phone").val()==""){
-             alert("尚未填寫電話");
+             alert("Please fill in your phone number");
          }else if($("#address").val()==""){
-             alert("尚未填寫問題");
+             alert("Please leave your response");
          }else{
-             confirm("確定送出表單？");
+             confirm("Sure to send？");
              window.open("sentok.html")
          }
      })
