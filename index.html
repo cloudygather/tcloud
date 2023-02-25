@@ -24,7 +24,8 @@
     font-family:'Noto Sans TC', sans-serif ;
     letter-spacing: 0.5px;
     font-weight: 300;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    overflow-x:hidden;
   }
   
   .slider_pc{
@@ -507,10 +508,10 @@
   <nav style="z-index: 1000;" id="nav_pc">
     <div class="logo"><img src="img/logo_LOGO.svg" style="width:;display:;margin:0px 0;cursor: pointer;" onclick="location.href='Tcloud_1103_4.html'"></div>
      <ul style="position: absolute;top:0px;right:40px;">
-      <input type="button" class="menu" value="Contact" onClick="javascript:ScrollTo('contact')">
       <input type="button" class="menu" value="Activities" onClick="javascript:ScrollTo('news')">
       <input type="button" class="menu" value="Products" onClick="javascript:ScrollTo('product')">
       <input type="button" class="menu" value="About" onClick="javascript:ScrollTo('plan')">　
+      <input type="button" class="menu" value="Contact" onClick="javascript:ScrollTo('contact')">
      </ul>
   </nav>
   
@@ -578,8 +579,8 @@
 
  
 
-  <div class="product_describe_mobile" style="text-align:center;background-color:#ffffff;width:100%;height:auto;margin:0 auto;">
-      <h1 style="color:#2554A4;text-align: left;font-"><b>Digital City Proposal </b></h1>
+  <div class="product_describe_mobile" style="text-align:center;background-color:#ffffff;width:93%;margin:auto;">
+      <h1 style="color:#2554A4;text-align: left;padding-top: 8vh;"><b>Digital City Proposal </b></h1>
       <h4 style="color:#2554A4;font-weight: 600;text-align: left;">． 50G storage </br>． 100G data per months</br>． Free system installation </br>． 4 hrs education trainning online</h4>
   </div>
 
@@ -770,7 +771,7 @@
   </div>
 
 
-  <div class="product_describe_mobile" style="text-align:left;background-color:#f5f5f5;width:100%;height:auto;margin:0 auto;">
+  <div class="product_describe_mobile" style="text-align:left;background-color:#f5f5f5;width:93%;margin:auto;">
       <h1 style="color:#2554A4;padding-top: 8vh;"><b>Smart Life Solution</b></h1>
       <h4 style="color:#2554A4;font-weight: 600;">． Unlimited number of stores </br>． Cross-platform management</br>． Free system installation</h4>
   </div>
@@ -922,6 +923,15 @@
     </div>
     <div style="margin: 8vh;"><btn class="btn1" id="btn_list">Message</btn></div>
     <div style="padding: 0 0 3vh 0;color:#4a4a4a;"><h3>Service Hotline：04-12345678</h3></div>
+</div>
+
+<div id="contact" style="text-align:center;background-color:#f5f5f5;width:100%;height:auto;padding:35px;">
+  <div ><h1><b>Contact</b></h1></div>
+  <div style="width:80%;margin: auto;">
+  <h3 style="color:#4a4a4a;">If you have any question, please fill in the form or call the service hotline for consultation, and we will do our best to serve you.</h3>
+  </div>
+  <div style="margin: 8vh;"><btn class="btn1" id="btn_list">Message</btn></div>
+  <div style="padding: 0 0 3vh 0;color:#4a4a4a;"><h3>Service Hotline：04-12345678</h3></div>
 </div>
 
 <!-- The Modal -->
