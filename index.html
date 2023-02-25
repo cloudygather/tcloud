@@ -105,9 +105,6 @@ ul {
 li {
   text-decoration: none;
   margin: 5vh 1.5vw;
-  border-style:solid;
-  border-width:1px;
-  border-color:#ddd;
   padding: 15px 0;
   border-radius: 6px;
   width:200px;
@@ -200,7 +197,7 @@ ul {
   display: flex;
   justify-content: right;
   float: right;
-  margin-right:2vw;
+  margin:auto;
 }
 
 li {
@@ -208,9 +205,10 @@ li {
   margin: 0 1.5vw;
   padding: 10px 0;
   display: block;
-  color: #4a4a4a;
+  color:;
   font-weight: 400;
   cursor: pointer;
+  width: 100%;
 }
 
 li:hover{
@@ -364,13 +362,17 @@ li a {
   border-width:1px;
   border-color:#ffffff;
   border-style:solid;
-  width:200px;
+  width:100%;
   border-radius: 6px;
   padding: 20px 0;
   text-align: center;
-  margin:3.5vh auto;
+  margin:auto;
   font-size: 20px;
   font-weight: 400;
+}
+
+.menu_mobile:hover{
+  color:#2554A4;
 }
 
 .menu{
@@ -644,8 +646,7 @@ nav{
 
   <nav style="z-index: 1000;" id="nav_pc">
     <div class="logo"><img src="img/logo_LOGO.svg" style="width:;display:;margin:0px 0;cursor: pointer;" onclick="location.href='Tcloud_1103_4.html'"></div>
-  
-     <ul>
+     <ul style="position: absolute;top:16px;right:40px;">
       <input type="button" class="menu" value="About" onClick="javascript:ScrollTo('plan')">　
       <input type="button" class="menu" value="Products" onClick="javascript:ScrollTo('product')">　
       <input type="button" class="menu" value="Activities" onClick="javascript:ScrollTo('news')">
@@ -655,7 +656,7 @@ nav{
   
   <nav style="z-index: 1000;" id="nav_mobile">
     <div  class="logo_mobile" style="cursor: pointer;" onclick="location.href='Tcloud_1103_4.html'"><img src="img/logo_LOGO.svg"></div>
-    <label for="menu-check" id="menu-toggle"><img src="img/icon_menu.svg" style="padding:;"></label>     
+    <label for="menu-check" id="menu-toggle"><img src="img/icon_menu.svg"></label>     
     <input id="menu-check" type="checkbox">     
     <ul class="checkmenu">         
       <li onClick="javascript:ScrollTo('plan')">About</li>         
