@@ -81,18 +81,20 @@
   }
   
   
-  .menu{
+
+
+.menu_style{
     color:#4a4a4a;
     margin: 8px 20px;
     font-size: 1em;
     border-style: hide;
     border:2px white none;
     background-color: #ffffff;
-    float: right;
+    float: ;
     cursor: pointer;
-  }
+}
   
-  .menu:hover{
+  .menu_style:hover{
     color:#2554A4;
     border-bottom: solid;
     border-color: #2554A4;
@@ -284,7 +286,7 @@
   .checkmenu{
     width:100%;
     background-color:rgba(255, 255, 255, 0.8);
-    margin: 0px 0 0 0;
+    margin: -2px;
     width:100%;
     padding:20px 0;
     height:auto;
@@ -447,39 +449,26 @@
     padding: 8px 8px;
   }
   
-  @keyframes fadein {
-          0% {
-              opacity: 0;
-              transform: translate(0px,0px);
-          }
-          100% {
-              opacity: 1;
-              transform: translate(0px,0px);
-          }
-          
-     }
-  
-  #fadein{
-          background: ;
-          animation: fadein 5s ease;
-      }
+  .menu{
+    text-decoration: none;
+    color:#4a4a4a;
+    margin: 16px 20px;
+    cursor: pointer;
+  }
+    
+  .menu:hover{
+    color:#2554A4;
+    border-bottom: solid;
+    border-color: #2554A4;
+    border-width: 1px;
+  }
+
+  a{
+    text-decoration: none;
+  }
   
   
   </style>
-  
-  
-  <script type="text/javascript" src="jquery.js">
-    $(function () {
-        $(‘a[href*=#]:not([href=#])’).click(function() {
-            var target = $(this.hash);
-            $(‘html,body’).animate({
-                scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        });
-  
-    });
-  </script>
   
   <script>
     function ScrollTo(id_name) {
@@ -497,7 +486,8 @@
     }
     </script>
   
-  
+
+
   </style>
   
   
@@ -506,24 +496,24 @@
 
 
   <nav style="z-index: 1000;" id="nav_pc">
-    <div class="logo"><img src="img/logo_LOGO.svg" style="width:;display:;margin:0px 0;cursor: pointer;" onclick="location.href='Tcloud_1103_4.html'"></div>
-     <ul style="position: absolute;top:0px;right:40px;">
-      <input type="button" class="menu" value="Activities" onClick="javascript:ScrollTo('news')">
-      <input type="button" class="menu" value="Products" onClick="javascript:ScrollTo('product')">
-      <input type="button" class="menu" value="About" onClick="javascript:ScrollTo('plan')">　
-      <input type="button" class="menu" value="Contact" onClick="javascript:ScrollTo('contact')">
+    <div class="logo"><img src="img/logo_LOGO.svg" style="width:;display:;margin:0px 0;cursor: pointer;" onclick="location.href='index.html'"></div>
+     <ul style="position: absolute;top:10px;right:40px;">
+      <a href="#plan" class="menu">About</a>
+      <a href="#product" class="menu">Products</a>
+      <a href="#news_pc" class="menu">Activities</a>
+      <a href="#contact" class="menu">Contact</a>
      </ul>
   </nav>
   
   <nav style="z-index: 1000;" id="nav_mobile">
-    <div  class="logo_mobile" style="cursor: pointer;" onclick="location.href='Tcloud_1103_4.html'"><img src="img/logo_LOGO.svg"></div>
+    <div  class="logo_mobile" style="cursor: pointer;" onclick="location.href='index.html'"><img src="img/logo_LOGO.svg"></div>
     <label for="menu-check" id="menu-toggle"><img src="img/icon_menu.svg"></label>     
     <input id="menu-check" type="checkbox">     
     <ul class="checkmenu">         
-      <li onClick="javascript:ScrollTo('plan')">About</li>         
-      <li onClick="javascript:ScrollTo('product')">Products</li>         
-      <li onClick="javascript:ScrollTo('news_mobile')">Activities</li>         
-      <li onClick="javascript:ScrollTo('contact')">Contact</li>         
+      <li><a href="#plan">About</a></li>         
+      <li><a href="#product">Products</a></li>         
+      <li><a href="#news_mobile">Activities</a></li>         
+      <li><a href="#contact">Contact</a></li>         
     </ul>
   </nav>
   
@@ -562,7 +552,7 @@
     </div>
 </div>
 
-<div id="product" class="" style="background-color:#ffffff;padding:0vh 5vw;;">
+<div id="product" class="product" style="background-color:#ffffff;padding:0vh 5vw;;">
 
   <div class="product_describe_pc" style="text-align:left;background-color:#ffffff;width:100%;height:auto;margin:14vh 5vw;">
     <div class="column" style="padding-left: 8vw;">
@@ -846,7 +836,7 @@
 
 </div>
 
-<div id="news" class="news_pc" style="margin:100px auto;width:80%;text-align: center;height:auto;">
+<div id="news_pc" class="news_pc" style="margin:100px auto;width:80%;text-align: center;height:auto;">
 
   <div><h1><b>Related Activities</b></h1></div>
   <h3 style="color:#000000;padding-bottom:5vh;">Does the government only provide subsidies to aid enterprises in digital transformation? Can't we see the effectiveness of investment and end up waiting for nothing? We will be holding related activities and invite you to join us!</h3>
@@ -916,7 +906,7 @@
 </div>
 </div>
 
-<div id="contact" style="text-align:center;background-color:#f5f5f5;width:100%;height:auto;padding:60px 0 ;">
+<div id="contact" class="contact" style="text-align:center;background-color:#f5f5f5;width:100%;height:auto;padding:60px 0 ;">
     <div ><h1><b>Contact</b></h1></div>
     <div style="width: 80%;margin:auto;">
     <h3 style="color:#4a4a4a;">If you have any question, please fill in the form or call the service hotline for consultation, and we will do our best to serve you.</h3>
